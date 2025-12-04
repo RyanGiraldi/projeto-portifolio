@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
   Variáveis para cores:
   --fundo-principal
@@ -8,8 +9,57 @@
   --fundo-card
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --fundo-principal: #B8DEFF;
+  --texto: white;
+  --texto-inverso: #5695CC;
+  --destaque: #365D80;
+  --destaque-inverso: #6BBAFF;
+  --fundo-card: #44a3f7;
+}
 
 body {
-  background-color: black;
-  color: lightskyblue;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5em;
+  background-color: var(--fundo-principal);
+  color: var(--texto);
 }
+
+header {
+  background-color: var(--destaque);
+  color: var(--texto);
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+nav#menu ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+nav#menu a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: 700;
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+nav#menu a:hover {
+  background-color: var(--destaque-inverso);
+  color: var(--destaque);
+  border-radius: 8px;
+}
+
