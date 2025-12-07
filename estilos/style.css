@@ -22,7 +22,7 @@
   --texto: white;
   --texto-inverso: #5695CC;
   --destaque: #365D80;
-  --destaque-inverso: #6BBAFF;
+  --destaque-inverso: #97ccfc;
   --fundo-card: #44a3f7;
 }
 
@@ -62,4 +62,61 @@ nav#menu a:hover {
   color: var(--destaque);
   border-radius: 8px;
 }
+
+main {
+  display: grid;
+  grid-template-columns: auto 90vw auto;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+section#ficha {
+  background-color: var(--fundo-card);
+  padding: 20px;
+  border-radius: 8px;
+  grid-column: 2;
+}
+
+section#ficha img.foto {
+  width: 200px;
+  aspect-ratio: 1/1; /*muda o tamanho da foto tipo 16:9 e essas coisas...*/
+  object-fit: cover; /*ajusta a foto*/
+  overflow: hidden; /* se sobrar algo para fora ele fica escondido*/
+  border-radius: 50%;
+  border: 5px solid var(--fundo-card); /*borda de dentro*/
+  outline: 5px solid var(--destaque); /*borda de fora*/
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+section#ficha h1 {
+  color: var(--destaque);
+  margin: 15px 0px;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+section#ficha p {
+  text-align: center;
+}
+
+div#social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  gap: 1em;
+  margin-top: 15px;
+}
+
+div#social a {
+  color: var(--destaque);
+  transition: color 0.5s;
+}
+
+div#social a:hover {
+  color: var(--destaque-inverso);
+}
+
 
