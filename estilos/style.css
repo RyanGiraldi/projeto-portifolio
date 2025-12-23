@@ -217,7 +217,7 @@ article#video .video-container {
 #formacao-container .instituicao {
   color: var(--destaque-inverso);
   font-size: 1.2em;
-}
+} /* Fim das Formações*/
 
 @media screen and (min-width: 768px) {
     #skill-container {
