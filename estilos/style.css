@@ -40,6 +40,9 @@ header {
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  position: sticky; /*fala que é grudado*/
+  top: 0; /*faz ele ficar grudado na parte de cima*/
+  z-index: 1; /*como se fosse a camada*/
 }
 
 nav#menu ul {
